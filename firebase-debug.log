@@ -1,0 +1,64 @@
+[debug] [2021-04-17T11:01:37.925Z] ----------------------------------------------------------------------
+[debug] [2021-04-17T11:01:37.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\nipun\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init firestore
+[debug] [2021-04-17T11:01:37.931Z] CLI Version:   9.10.0
+[debug] [2021-04-17T11:01:37.931Z] Platform:      win32
+[debug] [2021-04-17T11:01:37.932Z] Node Version:  v15.6.0
+[debug] [2021-04-17T11:01:37.934Z] Time:          Sat Apr 17 2021 16:31:37 GMT+0530 (India Standard Time)
+[debug] [2021-04-17T11:01:37.934Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-17T11:01:37.957Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-17T11:01:37.958Z] > authorizing via signed-in user (nipunhedaoo@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\nipun\OneDrive\Documents\GitHub\expensy
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using expensy-69717. 
+[debug] [2021-04-17T11:02:02.261Z] > refreshing access token with scopes: []
+[debug] [2021-04-17T11:02:02.264Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-17T11:02:02.651Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 17 Apr 2021 11:02:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T11:02:02.668Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/expensy-69717 [none]
+[debug] [2021-04-17T11:02:03.146Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/expensy-69717 200
+[debug] [2021-04-17T11:02:03.147Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/expensy-69717 {"projectId":"expensy-69717","projectNumber":"182102373648","displayName":"Expensy","name":"projects/expensy-69717","resources":{"hostingSite":"expensy-69717","storageBucket":"expensy-69717.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-04-17T11:02:03.149Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-17T11:02:03.149Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-17T11:02:03.366Z] <<< HTTP RESPONSE 200 {"date":"Sat, 17 Apr 2021 11:02:03 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T11:02:03.379Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/expensy-69717/services/firestore.googleapis.com  
+ 
+[debug] [2021-04-17T11:02:05.238Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 11:02:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T11:02:05.239Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/expensy-69717  
+ 
+[debug] [2021-04-17T11:02:05.961Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 11:02:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T11:02:05.961Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-04-17T11:02:05.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-17T11:02:05.962Z] > authorizing via signed-in user (nipunhedaoo@gmail.com)
+[debug] [2021-04-17T11:02:05.962Z] [iam] checking project expensy-69717 for permissions ["firebase.projects.get"]
+[debug] [2021-04-17T11:02:05.963Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/expensy-69717:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-17T11:02:07.398Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 11:02:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1169","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
