@@ -1,8 +1,4 @@
 node_modules
-firebaserc
-flowconfig
-gitattributes
-watchmanconfig
-*.log
+
 
 
